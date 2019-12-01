@@ -37,11 +37,11 @@ class Navbar extends React.Component {
             <a className="nav-item nav-link" href="#">About us</a>
             <a className="nav-item nav-link" href="#">Mission</a>
             <a className="nav-item nav-link" href="#" tabIndex="-1">Team</a>
-            <LoginButtons
-              login="Login"
-              signup="Join the tribe"
-            />
           </div>
+          <LoginButtons
+            login="Login"
+            signup="Join the tribe"
+          />
         </div>
       </nav>
     )
@@ -52,9 +52,9 @@ class LoginButtons extends React.Component {
   render() {
     const { login, signup } = this.props
     return (
-      <div>
-        <button className="btn btn-primary ml-1">{login}</button>
-        <button className="btn btn-primary ml-1">{signup}</button>
+      <div className="">
+        <button className="d-inline-block btn btn-primary ml-1">{login}</button>
+        <button className="d-inline-block btn btn-primary ml-1">{signup}</button>
       </div>
     )
   }
